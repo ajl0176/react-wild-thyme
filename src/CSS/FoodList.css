@@ -1,0 +1,32 @@
+body {
+  background: url("../images/salad.jpg") no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+
+}
+
+
+.foodCategory {
+  display: flex;
+  justify-content: center;
+  font-family: math;
+  font-weight:bold;
+}
+
+
+h5.col-1 {
+  padding-right:5px;
+}
+
+.list-group-item {
+  background: rgb(255, 255, 255, 0.6);
+}
+
+h5.col-10{
+  position:relative;
+  top: .5em;
+}
+
+.addOrder {
+  background: rgb(217, 217, 217, 0.5);
+}

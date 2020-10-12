@@ -1,0 +1,13 @@
+.main-title {
+  font-family:math;
+  font-weight:bold;
+}
+
+hr.solid {
+  border-top: 3px solid;
+  width: 700px;
+}
+
+.subtotal {
+  margin-left: 215px;
+}
