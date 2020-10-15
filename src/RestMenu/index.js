@@ -19,6 +19,7 @@ constructor(props) {
   };
 this.addOrder = this.addOrder.bind(this);
 this.deleteOrder = this.deleteOrder.bind(this);
+this.submitOrder = this.submitOrder.bind(this);
 
 
 }
@@ -38,6 +39,11 @@ deleteOrder(item){
   const index = order.indexOf(order);
   order.splice(index, 1);
   this.setState({order, order});
+}
+
+submitOrder() {
+  alert("Your order was submitted!");
+  this.setState({order: []});
 }
 
 
@@ -112,11 +118,11 @@ this.setState ({ desserts })
 
 
   render(){
-    let showCart = this.state.cart;
+
     return(
       <div className="row">
       <FoodList appetizers={this.state.appetizers} entrees={this.state.entrees} desserts={this.state.desserts} addOrder={this.addOrder} />
-      <OrderForm order={this.state.order} deleteOrder={this.deleteOrder}/>
+      <OrderForm order={this.state.order} deleteOrder={this.deleteOrder} submitOrder={this.submitOrder}/>
 
     </div>
 

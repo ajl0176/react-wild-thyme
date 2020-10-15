@@ -54,7 +54,7 @@ const subtotal = this.props.order.reduce((acc, item)=> {
             <div className="subtotal">
                 <h4>Total: ${subtotal}</h4>
 
-                <button onClick="checkOut()">Check Out</button>
+                <button onClick={this.props.submitOrder}>Check Out</button>
 
           </div>
         </div>
